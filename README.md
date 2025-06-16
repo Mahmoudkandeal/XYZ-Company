@@ -1,10 +1,6 @@
 # XYZ Company 
-
-**Supervised by:** Eng. Sondos Alsafy  
 **Prepared by:** Eng. Mahmoud Hamed Abdel Moniem
-
 ---
-
 ## Overview
 
 This project focuses on setting up and configuring a basic internal server for XYZ Company. It includes IP configuration, hostname setup, user management, permission controls, Apache web server installation, and testing website accessibility.
@@ -29,7 +25,7 @@ Setting the correct hostname helps easily identify the server on the network.
 
 - The hostname was set using: `hostnamectl set-hostname internal.xyz.local`
 
-![Hostname Configuration](images/hostname.png)
+![Hostname Configuration](images/2.png)
 
 ---
 
@@ -38,7 +34,7 @@ Setting the correct hostname helps easily identify the server on the network.
 The `/etc/hosts` file maps the hostname to the IP address locally.  
 This simulates DNS functionality so users can access the site via a name instead of an IP.
 
-![Hosts File](images/hosts-file.png)
+![Hosts File](images/3.png)
 
 ---
 
@@ -52,7 +48,7 @@ Created users for role-based access:
 
 Each has specific access permissions for better security and control.
 
-![Users](images/users.png)
+![Users](images/4.png)
 
 ---
 
@@ -62,7 +58,7 @@ To ensure `admin1` can perform administrative tasks, we checked sudo privileges:
 
 - Added `admin1` to the `wheel` group.
 
-![Sudo Check](images/sudo.png)
+![Sudo Check](images/5.png)
 
 ---
 
@@ -76,7 +72,9 @@ Commands used:
 - `chown` – Change file ownership  
 - `chmod` – Set file permissions
 
-![Permissions](images/permissions.png)
+![Permissions](images/6.png)
+![Permissions](images/7.png)
+![Permissions](images/8.png)
 
 ---
 
@@ -84,7 +82,11 @@ Commands used:
 
 Apache installation and status verification:
 
-```bash
-dnf install httpd
-systemctl enable httpd
-systemctl status httpd
+![Permissions](images/9.1.png)
+![Permissions](images/9.png)
+---
+
+## 🌐 Using Hosts file to check from the host
+
+![Permissions](images/10.png)
+![Permissions](images/11.png)
